@@ -13,6 +13,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'DockerRegistry'
-    repository: 'g33kzone/go-gin-hello-world'
+    repository: '$(Build.Repository.Name)'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
