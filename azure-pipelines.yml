@@ -16,3 +16,6 @@ steps:
     repository: '$(Build.Repository.Name)'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
